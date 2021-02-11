@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Blog Site</title>
+    <!--Bootstrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- This goes right before our closing head tag -->
+    <link href="../../webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -13,5 +17,11 @@
     <p th:text="${author}" />
     <p th:text="${blogEntry}" />
 
+    <a th:href="@{/}"><button class="btn btn-success">Back To Home Page</button></a>
+    <a th:href="@{/blogposts/new}"><button class= "btn btn-primary">Submit a New Blog Post</button></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- These go right before our closing body tag -->
+    <script src="../../webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="../../webjars/jquery/1.9.1/jquery.min.js"></script>
 </body>
 </html>
